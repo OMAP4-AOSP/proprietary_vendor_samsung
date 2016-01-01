@@ -12,32 +12,39 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-PRODUCT_COPY_FILES += \
-    vendor/samsung/espresso-common/proprietary/system/bin/gpsd:system/bin/gpsd \
-    vendor/samsung/espresso-common/proprietary/system/bin/smc.ini:system/bin/smc.ini \
-    vendor/samsung/espresso-common/proprietary/system/bin/smc_pa.ift:system/bin/smc_pa.ift
+VENDOR_FOLDER := vendor/samsung/espresso-common
 
+# SMC
 PRODUCT_COPY_FILES += \
-    vendor/samsung/espresso-common/proprietary/system/etc/wifi/bcmdhd_p2p.bin:system/etc/wifi/bcmdhd_p2p.bin \
-    vendor/samsung/espresso-common/proprietary/system/etc/wifi/nvram_mfg.txt:system/etc/wifi/nvram_mfg.txt \
-    vendor/samsung/espresso-common/proprietary/system/etc/wifi/nvram_net.txt:system/etc/wifi/nvram_net.txt
+    $(VENDOR_FOLDER)/proprietary/bin/smc.ini:system/bin/smc.ini \
+    $(VENDOR_FOLDER)/proprietary/bin/smc_pa.ift:system/bin/smc_pa.ift
 
+# Wi-Fi
 PRODUCT_COPY_FILES += \
-    vendor/samsung/espresso-common/proprietary/system/lib/hw/gps.manta.so:system/lib/hw/gps.omap4.so
+    $(VENDOR_FOLDER)/proprietary/etc/wifi/bcmdhd_p2p.bin:system/etc/wifi/bcmdhd_p2p.bin \
+    $(VENDOR_FOLDER)/proprietary/etc/wifi/nvram_mfg.txt:system/etc/wifi/nvram_mfg.txt \
+    $(VENDOR_FOLDER)/proprietary/etc/wifi/nvram_net.txt:system/etc/wifi/nvram_net.txt \
+    $(VENDOR_FOLDER)/proprietary/vendor/firmware/BCM4330.hcd:system/vendor/firmware/BCM4330.hcd
 
+# GPS
 PRODUCT_COPY_FILES += \
-    vendor/samsung/espresso-common/proprietary/system/lib/libQmageDecoder.so:system/lib/libQmageDecoder.so \
-    vendor/samsung/espresso-common/proprietary/system/lib/libsecnativefeature.so:system/lib/libsecnativefeature.so
+    $(VENDOR_FOLDER)/proprietary/bin/gpsd:system/bin/gpsd \
+    $(VENDOR_FOLDER)/proprietary/lib/hw/gps.manta.so:system/lib/hw/gps.omap4.so
 
+# RIL
 PRODUCT_COPY_FILES += \
-    vendor/samsung/espresso-common/proprietary/system/vendor/firmware/BCM4330.hcd:system/vendor/firmware/BCM4330.hcd \
-    vendor/samsung/espresso-common/proprietary/system/vendor/firmware/ducati-m3.bin:system/vendor/firmware/ducati-m3.bin
+    $(VENDOR_FOLDER)/proprietary/lib/libsecnativefeature.so:system/lib/libsecnativefeature.so
 
+# Ducati
 PRODUCT_COPY_FILES += \
-    vendor/samsung/espresso-common/proprietary/system/lib/libdrmdecrypt.so:system/lib/libdrmdecrypt.so \
-    vendor/samsung/espresso-common/proprietary/system/vendor/lib/libstlport.so:system/vendor/lib/libstlport.so \
-    vendor/samsung/espresso-common/proprietary/system/vendor/lib/libwvdrm_L3.so:system/vendor/lib/libwvdrm_L3.so \
-    vendor/samsung/espresso-common/proprietary/system/vendor/lib/libwvm.so:system/vendor/lib/libwvm.so \
-    vendor/samsung/espresso-common/proprietary/system/vendor/lib/libWVStreamControlAPI_L3.so:system/vendor/lib/libWVStreamControlAPI_L3.so \
-    vendor/samsung/espresso-common/proprietary/system/vendor/lib/drm/libdrmwvmplugin.so:system/vendor/lib/drm/libdrmwvmplugin.so \
-    vendor/samsung/espresso-common/proprietary/system/vendor/lib/mediadrm/libwvdrmengine.so:system/vendor/lib/mediadrm/libwvdrmengine.so
+    $(VENDOR_FOLDER)/proprietary/vendor/firmware/ducati-m3.bin:system/vendor/firmware/ducati-m3.bin
+
+# DRM
+PRODUCT_COPY_FILES += \
+    $(VENDOR_FOLDER)/proprietary/lib/libdrmdecrypt.so:system/lib/libdrmdecrypt.so \
+    $(VENDOR_FOLDER)/proprietary/vendor/lib/drm/libdrmwvmplugin.so:system/vendor/lib/drm/libdrmwvmplugin.so \
+    $(VENDOR_FOLDER)/proprietary/vendor/lib/libWVStreamControlAPI_L3.so:system/vendor/lib/libWVStreamControlAPI_L3.so \
+    $(VENDOR_FOLDER)/proprietary/vendor/lib/libstlport.so:system/vendor/lib/libstlport.so \
+    $(VENDOR_FOLDER)/proprietary/vendor/lib/libwvdrm_L3.so:system/vendor/lib/libwvdrm_L3.so \
+    $(VENDOR_FOLDER)/proprietary/vendor/lib/libwvm.so:system/vendor/lib/libwvm.so \
+    $(VENDOR_FOLDER)/proprietary/vendor/lib/mediadrm/libwvdrmengine.so:system/vendor/lib/mediadrm/libwvdrmengine.so
