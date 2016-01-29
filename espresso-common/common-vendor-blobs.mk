@@ -21,7 +21,10 @@ PRODUCT_COPY_FILES += \
 
 # Wi-Fi
 PRODUCT_COPY_FILES += \
+    $(VENDOR_FOLDER)/proprietary/etc/wifi/bcmdhd_apsta.bin:system/etc/wifi/bcmdhd_apsta.bin \
+    $(VENDOR_FOLDER)/proprietary/etc/wifi/bcmdhd_mfg.bin:system/etc/wifi/bcmdhd_mfg.bin \
     $(VENDOR_FOLDER)/proprietary/etc/wifi/bcmdhd_p2p.bin:system/etc/wifi/bcmdhd_p2p.bin \
+    $(VENDOR_FOLDER)/proprietary/etc/wifi/bcmdhd_sta.bin:system/etc/wifi/bcmdhd_sta.bin \
     $(VENDOR_FOLDER)/proprietary/etc/wifi/nvram_mfg.txt:system/etc/wifi/nvram_mfg.txt \
     $(VENDOR_FOLDER)/proprietary/etc/wifi/nvram_net.txt:system/etc/wifi/nvram_net.txt \
     $(VENDOR_FOLDER)/proprietary/vendor/firmware/BCM4330.hcd:system/vendor/firmware/BCM4330.hcd
