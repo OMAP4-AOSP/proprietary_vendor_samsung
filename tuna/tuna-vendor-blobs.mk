@@ -13,12 +13,6 @@ PRODUCT_COPY_FILES += \
 	$(VENDOR_FOLDER)/lib/libwvm.so:system/vendor/lib/libwvm.so \
 	$(VENDOR_FOLDER)/lib/libWVStreamControlAPI_L3.so:system/vendor/lib/libWVStreamControlAPI_L3.so
 
-ifeq ($(TARGET_PREBUILT_CAMERA_CALIB),true)
-PRODUCT_COPY_FILES += \
-	$(VENDOR_FOLDER)/camera/R5_MVEN003_LD2_ND0_IR0_SH0_FL1_SVEN003_DCCID1044/calib.bin:system/vendor/camera/R5_MVEN003_LD2_ND0_IR0_SH0_FL1_SVEN003_DCCID1044/calib.bin
-endif
-
-
 # maguro-specific files copied to /system/vendor/maguro
 PRODUCT_COPY_FILES += \
 	$(VENDOR_FOLDER)/maguro/etc/sirfgps.conf:system/vendor/maguro/etc/sirfgps.conf \
