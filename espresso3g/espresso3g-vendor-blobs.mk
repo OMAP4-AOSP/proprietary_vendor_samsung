@@ -1,4 +1,4 @@
-VENDOR_FOLDER := vendor/samsung/p51xx
+VENDOR_FOLDER := vendor/samsung/espresso3g
 
 # RIL
 PRODUCT_COPY_FILES += \

@@ -12,4 +12,4 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-$(call inherit-product, vendor/samsung/p31xx/p31xx-vendor-blobs.mk)
+$(call inherit-product, vendor/samsung/espresso3g/espresso3g-vendor-blobs.mk)
