@@ -4,8 +4,6 @@ VENDOR_FOLDER := vendor/samsung/tuna/proprietary/vendor
 # common tuna files copied to default locations
 PRODUCT_COPY_FILES += \
 	$(VENDOR_FOLDER)/firmware/ducati-m3.bin:system/vendor/firmware/ducati-m3.bin \
-	$(VENDOR_FOLDER)/firmware/mms144_ts_rev31.fw:system/vendor/firmware/mms144_ts_rev31.fw \
-	$(VENDOR_FOLDER)/firmware/mms144_ts_rev32.fw:system/vendor/firmware/mms144_ts_rev32.fw \
 	$(VENDOR_FOLDER)/lib/drm/libdrmwvmplugin.so:system/vendor/lib/drm/libdrmwvmplugin.so \
 	$(VENDOR_FOLDER)/lib/mediadrm/libwvdrmengine.so:system/vendor/lib/mediadrm/libwvdrmengine.so \
 	$(VENDOR_FOLDER)/lib/libdrmdecrypt.so:system/vendor/lib/libdrmdecrypt.so \
