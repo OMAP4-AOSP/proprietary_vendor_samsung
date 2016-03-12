@@ -4,6 +4,8 @@ VENDOR_FOLDER := vendor/samsung/tuna/proprietary/vendor
 # common tuna files copied to default locations
 PRODUCT_COPY_FILES += \
 	$(VENDOR_FOLDER)/firmware/ducati-m3.bin:system/vendor/firmware/ducati-m3.bin \
+	$(VENDOR_FOLDER)/firmware/smc_pa_wvdrm.ift:system/vendor/firmware/smc_pa_wvdrm.ift \
+	$(VENDOR_FOLDER)/etc/smc_normal_world_android_cfg.ini:system/vendor/etc/smc_normal_world_android_cfg.ini \
 	$(VENDOR_FOLDER)/lib/libfrsdk.so:system/vendor/lib/libfrsdk.so \
 	$(VENDOR_FOLDER)/lib/libinvensense_mpl.so:system/vendor/lib/libinvensense_mpl.so
 
