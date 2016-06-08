@@ -34,10 +34,6 @@ PRODUCT_COPY_FILES += \
     $(VENDOR_FOLDER)/proprietary/system/bin/gpsd:system/bin/gpsd \
     $(VENDOR_FOLDER)/proprietary/system/lib/hw/gps.omap4.so:system/lib/hw/gps.omap4.so
 
-# RIL
-PRODUCT_COPY_FILES += \
-    $(VENDOR_FOLDER)/proprietary/system/lib/libsecnativefeature.so:system/lib/libsecnativefeature.so
-
 # Ducati
 PRODUCT_COPY_FILES += \
     $(VENDOR_FOLDER)/proprietary/system/vendor/firmware/ducati-m3.bin:system/vendor/firmware/ducati-m3.bin
