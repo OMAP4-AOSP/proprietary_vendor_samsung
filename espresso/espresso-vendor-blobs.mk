@@ -31,7 +31,3 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(VENDOR_FOLDER)/proprietary/bin/gpsd:system/bin/gpsd \
     $(VENDOR_FOLDER)/proprietary/lib/hw/gps.manta.so:system/lib/hw/gps.omap4.so
-
-# Ducati
-PRODUCT_COPY_FILES += \
-    $(VENDOR_FOLDER)/proprietary/vendor/firmware/ducati-m3.bin:system/vendor/firmware/ducati-m3.bin

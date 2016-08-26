@@ -13,3 +13,6 @@
 # limitations under the License.
 
 $(call inherit-product, vendor/samsung/espresso/espresso-vendor-blobs.mk)
+
+PRODUCT_PACKAGES += \
+	ducati-m3
