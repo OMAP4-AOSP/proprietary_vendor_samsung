@@ -14,5 +14,7 @@
 
 $(call inherit-product, vendor/samsung/espresso/espresso-vendor-blobs.mk)
 
+ifneq ($(filter ducati-m3-core0,$(PRODUCT_PACKAGES)),)
 PRODUCT_PACKAGES += \
-	ducati-m3
+    ducati-m3
+endif
